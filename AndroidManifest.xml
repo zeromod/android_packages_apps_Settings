@@ -2875,6 +2875,12 @@
             </intent-filter>
         </activity>
 
+	<activity-alias android:name="dialerIntent" android:targetActivity=".sim.SimDialogActivity">
+        <intent-filter>
+                <action android:name="dialer.action.sim"/>
+         </intent-filter>
+       </activity-alias>
+
         <activity android:name="Settings$WifiCallingSettingsActivity"
                   android:label="@string/wifi_calling_settings_title"
                   android:taskAffinity="">
